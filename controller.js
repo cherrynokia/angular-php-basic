@@ -17,7 +17,7 @@ app.controller('DetailCtrl', function($scope, $window) {
       alert("更新しました。");
     });
   };
-  $scope.delete = function(index) {
+  $scope.delete = function() {
     $scope.student.$delete();
     alert("削除しました。");
     $window.location.reload();
